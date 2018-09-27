@@ -3,6 +3,18 @@ module.exports = {
   "plugins": [
     "react"
   ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", // Regex for Component Factory to use,
+      "pragma": "React",  // Pragma to use, default to "React"
+      "version": "16.2.0", // React version, default to the latest React stable release
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     "react/jsx-uses-react": 2,
     "react/no-did-update-set-state": 2,
