@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-  extends: ["./eslint-config-react/index.js"],
+  plugins: ['eslint-plugin-todo-comments'],
+  extends: ['./eslint-config-react/index.js'],
   rules: {
     /* section1 : 可能存在的错误 */
     // error; for循转方向出错
@@ -379,6 +380,14 @@ module.exports = {
     // 'template-curly-spacing': [2, 'never'],
     // error; yield* 后面必须加空格
     'yield-star-spacing': [2, 'after'],
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    // 限制TODO个数
+    'todo-comments/todo-count-limit': [
+      'error',
+      {
+          terms: ['todo',"FIXME"],
+          location: 'start'
+      }
+  ]
   }
 };
