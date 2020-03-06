@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ivweb",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "腾讯IVWEB团队eslint配置检测规范",
   "license": "Apache-2.0",
   "repository": "iv-web/eslint-config-ivweb",
@@ -29,7 +29,8 @@
     "code style"
   ],
   "dependencies": {
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-todo-comments": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
